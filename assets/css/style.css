@@ -1,108 +1,501 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .container {
-    width: 1300px;
-    margin: 0 auto;
-    padding: 0px 32px;
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0px 32px;
 }
+
+nav {
+  width: 100%;
+}
+
+.navcon {
+  width: 100%;
+  padding: 50px 32px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.logodiv {
+  width: 150px;
+  height: auto;
+}
+
+.logodiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.navcon ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navcon ul a {
+  color: #07043b;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+
+
+
 
 section {
-    width: 100%;
-    background-color: rgb(87, 89, 136);
+  width: 100%;
 }
 
-.sectioncon {
-    padding: 100px 32px;
+.sectionfirst {
+  width: 100%;
+  padding: 0px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionfirst .group1 {
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.group1 h1 {
+  color: #07043b;
+  font-size: 34px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.group1 p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #07043b;
+  width: 100%;
+  font-size: 16.5px;
+}
+
+.email {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 19px;
+  padding-right: 70px;
+}
+
+.email input {
+  width: 280px;
+  padding: 12px 10px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.email button {
+  width: 190px;
+  padding: 12px 10px;
+  border: none;
+  font-size: 15px;
+  color: white;
+  transition: 0.4s ease;
+  border-radius: 5px;
+  background-color: #2f65f8;
+}
+
+.email button:hover {
+  opacity: 0.6;
+}
+
+
+.sectionimgdiv {
+  width: 50%;
+}
+
+.sectionimgdiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+  section {
+    width: 100%;
+  }
+
+  .sectionfirst {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 50px;
+  }
+
+  .sectionfirst .group1 {
+    width: 100%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .group1 h1 {
+    text-align: center;
+  }
+
+  .group1 p {
+    text-align: center;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .email input {
+    width: 100%;
+  }
+
+  .email button {
+    width: 100%;
+  }
+
+  .sectionimgdiv {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+.section2 {
+  clip-path: ellipse(75% 100% at 51% 100%);
+  background: #F8F8FE;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section2con {
+  width: 100%;
+  padding: 250px 32px 150px;
+  margin-top: 100px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.section2conimg {
+  width: 40%;
+}
+
+.section2conimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.group2 {
+  width: 50%;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.group2 h1 {
+  font-size: 34px;
+  color: #07043b;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.group2 p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16.5px;
+  color: rgb(7, 4, 59);
+}
+
+.group2 a {
+  cursor: pointer;
+  color: rgb(61, 160, 143);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 2px solid;
+  width: 175px;
+  transition: 0.3s ease;
+}
+
+.group2 a:hover {
+  color: rgb(113, 223, 204);
+}
+
+.container1 {
+  width: 370px;
+  padding: 20px;
+  position: relative;
+  bottom: -40px;
+  background-color: white;
+  box-shadow: 10px 10px 10px 10px rgba(0.1, 0.1, 0.1, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 .group3 h3 {
+  font-size: 30px;
+}
+
+.group3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.group3 p {
+  font-size: 16px;
+}
+
+.profil {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.profilimg {
+  width: 50px;
+  height: 50px
+}
+
+.profilimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9999999px;
+
+}
+
+
+.adminname h4 {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.adminname p {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 992px) {
+  .section2con {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 50px;
+  }
+  .section2 {
+    padding: 100px 0px;
+    clip-path: ellipse(160% 90% at 51% 100%);
+    background: #F8F8FE;
+  }
+  
+  .group2 {
+    width: 100%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .group2 h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .group2 p {
+    text-align: center;
+    color: #5f617e;
+  }
+
+  .group2 a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .group2 a {
+    cursor: pointer;
+    color: #3da08f;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+    border-bottom: 2px solid;
+    width: 175px;
+    transition: 0.3s ease;
+  }
+
+  .profil {
+    align-items: flex-start;
+  }
+
+  .profil h1 {
+    color: black;
+  }
+
+  .group3 {
+    width: 100%;
+    text-align: start;
+  }
+
+  .group3 p {
+    text-align: start;
+  }
+   .section2conimg {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section3 {
+  width: 100%;
+  background-color: white;
+  background-color: rgb(87, 89, 136);
+}
+
+.section3con {
+  width: 100%;
+  padding: 100px 32px;
+  display: flex;
+  justify-content: space-between;
 
 }
 
 .footer1_text {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 34%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 34%;
 
 }
 
 .text1 {
-    font-size: 32px;
-    line-height: 48px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: white;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: white;
 }
 
 .text2 {
-    font-size: 14px;
-    color: white;
-    font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
 }
 
 .buttons_ {
-    width: 40%;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
+  width: 40%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .button_1 {
-    width: 400px;
-    padding: 12px 10px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
+  width: 400px;
+  padding: 12px 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
 }
 
 .button_2 {
-    width: 190px;
-    padding: 12px 10px;
-    border: none;
-    font-size: 15px;
-    color: white;
-    transition: 0.4s ease;
-    border-radius: 5px;
-    background-color: rgb(47, 101, 248);
+  width: 190px;
+  padding: 12px 10px;
+  border: none;
+  font-size: 15px;
+  color: white;
+  transition: 0.4s ease;
+  border-radius: 5px;
+  background-color: rgb(47, 101, 248);
 }
 
 
 @media screen and (max-width:768px) {
-        .footer1_text{
-            width: 100%;
-            justify-content: center;
-            align-items:center;
-          }
-          h2{
-            text-align: center;
-        }
-        p{
-            text-align: center;
-            width: 80%;
+  .footer1_text {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
-        }
-        .sectioncon{
-            flex-direction: column;
-            gap: 50px;
-            }
-            .buttons_{
-                width: 100%;
-                justify-content: center;
-                align-items:center;
-                gap: 10px;
-            }
-            .button_1 {
-                width: 300px;    
-            }
-            .button_2 {
-                width: 300px;
+  h2 {
+    text-align: center;
+  }
 
-            }
-        
-    }
+  p {
+    text-align: center;
+    width: 80%;
+
+  }
+
+  .section3con {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .buttons_ {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .button_1 {
+    width: 300px;
+  }
+
+  .button_2 {
+    width: 300px;
+
+  }
+
+}
 
 
 
@@ -141,135 +534,134 @@ section {
 
 
 footer {
-    width: 100%;
-    background-color: #07043b;
-    padding-bottom: 60px;
-  }
-  
-  footer .footer2 {
-    padding: 30px 32px;
-    display: flex;
-        flex-wrap: wrap;
+  width: 100%;
+  background-color: #07043b;
+  padding-bottom: 60px;
+}
 
-            justify-content: space-between;
-  }
-  
-  footer .footer2 .logodive {
-    width: 100%;
-    display: flex;
-    position: relative;
-    top: 50px;
-  }
-  
-  footer .footer2 .logodive .logodiv {
-    width: 150px;
-    height: 150px;
-  }
-  
-  footer .footercon .logodive .logodiv img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
+footer .footer2 {
+  width: 100%;
+  padding: 30px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .footer2 .logodive {
+  width: 100%;
+  display: flex;
+  position: relative;
+  top: 50px;
+}
+
+footer .footer2 .logodive .logodiv {
+  width: 150px;
+  height: 150px;
+}
+
+footer .footercon .logodive .logodiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .column_1 {
 
-    display: flex;
-            flex-direction: column;
-    gap: 10px;
-  }
-  
-  .column_1 div {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .column_1 div p {
-    color: white;
-    cursor: pointer;
-    font-size:15px;
-  }
-  
-  .column_1 div p:hover {
-    color: #71dfcc;
-  }
-  
-  .column_1 div p {
-    color: white;
-    cursor: pointer;
-    transition: 0.3s ease;
-    font-family: "Raleway", sans-serif;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
- .column_2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  a{
-    text-decoration: none;
-  }
-  
+.column_1 div {
+  display: flex;
+  gap: 0px;
+}
+
+.column_1 div p {
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.column_1 div p:hover {
+  color: #71dfcc;
+}
+
+.column_1 div p {
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: "Raleway", sans-serif;
+}
+
+.column_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .column_2 a {
-    color: white;
-    transition: 0.3s ease;
-    font-size: 20px;
-    font-family: "Raleway", sans-serif;
-  }
-  
-  .column_2 a:hover {
-    color: #6c9bff;
-  }
-  
-  .column_3 {
+  color: white;
+  transition: 0.3s ease;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
 
-    display: flex;
+.column_2 a:hover {
+  color: #6c9bff;
+}
 
-            flex-direction: column;
-    gap: 20px;
-  }
-  
-.column_3 a{
-    color: white;
-    transition: 0.3s ease;
-    font-size: 20px;
-    font-family: "Raleway", sans-serif;
-  }
-  
+.column_3 {
+
+  display: flex;
+
+  flex-direction: column;
+  gap: 20px;
+}
+
+.column_3 a {
+  color: white;
+  transition: 0.3s ease;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
 .column_3 a:hover {
-    color: #6c9bff;
-  }
-  
-.column_4 {
-    display: flex;
-    width: 20%;
-    gap: 15px;
-  }
-  
-  .column_4 i {
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 9999999px;
-    border: 2px solid white;
-    transition: 0.3s ease;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    color: white;
-  }
-  
-  @media screen and (max-width:768px) {
-    footer{
-        .footer2{
+  color: #6c9bff;
+}
 
-            flex-direction: column;
-            gap: 48px;
-            .column_4{
-                width: 100%;
-                justify-content: center;
-            }
-        }
-    }
+.column_4 {
+  display: flex;
+  width: 20%;
+  gap: 15px;
+}
+
+.column_4 i {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 9999999px;
+  border: 2px solid white;
+  transition: 0.3s ease;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  color: white;
+}
+
+@media screen and (max-width:768px) {
+  .footer2 {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .column_4 {
+    width: 100%;
+    justify-content: center;
+  }
 }
